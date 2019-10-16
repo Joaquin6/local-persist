@@ -12,8 +12,8 @@ function create-containers {
 }
 
 function check-containers {
-    (docker exec $ONE cat /app/data/test.txt | grep 'Cameron Spear') || exit 111
-    (docker exec $TWO cat /src/data/test.txt | grep 'Cameron Spear') || exit 222
+    (docker exec $ONE cat /app/data/test.txt | grep 'Joaquin Briceno') || exit 111
+    (docker exec $TWO cat /src/data/test.txt | grep 'Joaquin Briceno') || exit 222
 }
 
 function clean {

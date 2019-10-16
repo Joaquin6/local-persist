@@ -11,7 +11,7 @@ white='\033[0;37m'        # White
 nocolor='\033[0m'         # No Color
 
 
-USER=cwspear
+USER=Joaquin6
 REPO=local-persist
 
 # check to make sure github-release is installed!

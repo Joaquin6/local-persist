@@ -69,14 +69,14 @@ If you're uncomfortable running a script you downloaded off the internet with `s
 
 macOS and Windows do not support native Docker plugins, so the solution is to run this plugin from another container (you can also do this on Linux if you don't want to install the plugin manually).
 
-I maintain an [image on Docker Hub](https://hub.docker.com/r/cwspear/docker-local-persist-volume-plugin/) to run this plugin from a container:
+I maintain an [image on Docker Hub](https://hub.docker.com/r/Joaquin6/docker-local-persist-volume-plugin/) to run this plugin from a container:
 
 ```shell
 docker run -d \
     -v /run/docker/plugins/:/run/docker/plugins/ \
     -v /path/to/store/json/for/restart/:/var/lib/docker/plugin-data/ \
     -v /path/to/where/you/want/data/volume/:/path/to/where/you/want/data/volume/ \
-        cwspear/docker-local-persist-volume-plugin
+        Joaquin6/docker-local-persist-volume-plugin
 ```
 
 The `-v /run/docker/plugins/:/run/docker/plugins/` part will make sure the `sock` file gets created at the right place. You also need to add one or more volumes to places you want to mount your volumes later at.
